@@ -1,0 +1,24 @@
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+.navigationLink {
+    color: var(--text-color);
+    font-size: 24px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.navigationLink:hover {
+    background-color: var(--accent-color);
+    border-radius: 20px;
+    padding: 10px;
+}
