@@ -3,7 +3,7 @@ import styles from "./footer.module.css";
 
 export default function FooterOther() {
     return (
-        <div className={styles.footerNavigations}>
+        <div className={`${styles.footerNavigations} ${styles.otherNavigations}`}>
             <h3>OTHER</h3>
             <ul>
                 <li>

@@ -2,6 +2,10 @@ import Container from "@/app/_components/Container/Container";
 import comingSoonImg from "@/public/comingSoon.webp";
 import Image from "next/image";
 
+export const metadata = {
+  title: "Community",
+};
+
 export default function Page () {
     return (
         <div className="comingSoon">
