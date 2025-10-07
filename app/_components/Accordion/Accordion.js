@@ -7,14 +7,14 @@ import {useState} from "react";
 const accordion = [
     {
         id: 1,
-        "title": "WHAT IS SLEEP?",
+        "title": "WHAT IS SLEEPY?",
         "description": [
           "SLEEPY is a company focused on creating unique characters that act as your personal companion to assist with promoting and enabling healthier life habits. "
         ],
     },
     {
         id: 2,
-        "title": "WHAT IS THE GOAL OF SLEEP?",
+        "title": "WHAT IS THE GOAL OF SLEEPY?",
         "description": [
           "SLEEPY has many goals, starting with creating IP that can be used to drive story-telling and innovation.",
           "We believe in the ownership of characters and the usage of decentralized technology. With these in mind we can change the way usage of NFTs, authentication of luxury fashionwear, and ownership of health data is used.",

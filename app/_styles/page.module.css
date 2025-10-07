@@ -17,29 +17,31 @@
 
 @media (max-width: 1440px) {
     .pageImg {
-        object-fit: cover;
-        object-position: top;
-        width: inherit;
+        width: 1000px;
     }
 }
 
-/*@media (max-width: 1100px) {*/
-/*    .pageImg {*/
-/*        width: 700px;*/
-/*    }*/
-/*}*/
+@media (max-width: 1100px) {
+    .pageImg {
+        width: 800px;
+    }
+}
 
-/*@media (max-width: 768px) {*/
-/*    .pageImg {*/
-/*        display: block;*/
-/*        width: 393px;*/
-/*        margin-bottom: 50px;*/
-/*    }*/
-/*}*/
+@media (max-width: 900px) {
+    .pageImg {
+        width: 700px;
+    }
+}
 
-/*@media (max-width: 500px) {*/
-/*    .pageImg {*/
-/*        width: 330px;*/
-/*        margin-bottom: 0;*/
-/*    }*/
-/*}*/
+@media (max-width: 768px) {
+    .page {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        min-height: 100vh;
+    }
+
+    .pageImg {
+        width: inherit;
+    }
+}

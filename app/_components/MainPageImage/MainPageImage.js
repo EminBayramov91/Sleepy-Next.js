@@ -24,7 +24,7 @@ export default function MainPageImage() {
             className={styles.pageImg}
             alt="Sleepy main page image"
             priority
-            fill
+            width="393"
           />
         )
     }
