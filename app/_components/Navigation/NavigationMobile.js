@@ -28,10 +28,10 @@ export default function NavigationMobile({ toggleMenu, setToggleMenu }) {
                     <Link href="/shop" onClick={handleLinkClick}>SHOP</Link>
                 </li>
                 <li>
-                    <Link href="/mindmap" onClick={handleLinkClick}>COMMUNITY</Link>
+                    <Link href="/community" onClick={handleLinkClick}>COMMUNITY</Link>
                 </li>
                 <li>
-                    <Link href="/community" onClick={handleLinkClick}>MINDMAP</Link>
+                    <Link href="/mindmap" onClick={handleLinkClick}>MINDMAP</Link>
                 </li>
             </ul>
             <div className={styles.headerSocials}>

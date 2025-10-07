@@ -6,6 +6,7 @@ import MpPlusImg from "@/public/musicPlayer-plus.svg";
 import MpMinusImg from "@/public/musicPlayer-minus.svg";
 import prev from "@/public/prev.svg";
 import next from "@/public/next.svg";
+import pause from "@/public/pause.svg";
 import play from "@/public/play.svg";
 
 import {useEffect, useRef, useState} from "react";
@@ -76,7 +77,7 @@ export default function MusicPlayer() {
                         </button>
                         <button onClick={() => setPlaying((prev) => !prev)}>
                             <Image
-                                src={play}
+                                src={playing ? pause : play}
                                 width="33"
                                 height="33"
                                 className={styles.playBtn}

@@ -16,14 +16,26 @@ export default function MainPageImage() {
         return () => window.removeEventListener("resize", checkWidth);
     }, []);
 
-    return (
-        <Image
-            key={isMobile ? "mobile" : "desktop"}
-            src={isMobile ? mobileImage : mainPageImg}
-            width="1405"
+    if (isMobile) {
+        return (
+          <Image
+            key="mobile"
+            src={mobileImage}
             className={styles.pageImg}
             alt="Sleepy main page image"
             priority
+            fill
+          />
+        )
+    }
+    return (
+        <Image
+            key="desktop"
+            src={mainPageImg}
+            className={styles.pageImg}
+            alt="Sleepy main page image"
+            priority
+            with="1405"
         />
     );
 }

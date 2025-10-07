@@ -107,7 +107,17 @@
     .mindmapImgItemFirst {
         margin-right: 15px;
         margin-left: 15px;
+        img {
+            margin-bottom: 20px;
+        }
 
+    }
+
+    .mindmapImgItemSecond {
+        img {
+            width: 399px;
+            height: auto;
+        }
     }
 
     .mindmapImgItemThird {
@@ -125,7 +135,12 @@
         img {
             width: 360px;
             height: auto;
-            margin-bottom: 20px;
+        }
+    }
+
+    .mindmapImgItemSecond {
+        img {
+            width: 360px;
         }
     }
 
@@ -134,17 +149,17 @@
         justify-content: center;
 
         div:nth-child(1) {
-            margin-right: 18px;
+            margin-right: 5px;
 
             img {
-                width: 170px;
+                width: 177px;
                 height: auto;
             }
         }
 
         div:nth-child(2) {
             img {
-                width: 170px;
+                width: 177px;
                 height: auto;
             }
         }

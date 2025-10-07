@@ -8,6 +8,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 12px;
+}
+
+.headerIntroBg {
     background-color: var(--header-bg);
 }
 

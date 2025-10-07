@@ -8,42 +8,69 @@ const accordion = [
     {
         id: 1,
         "title": "WHAT IS SLEEP?",
-        "description": "SLEEP's 1.5-3 money focused on creating unique characters that act as your personal companies to assist with promoting and enabling baseline 80 habits."
+        "description": [
+          "SLEEPY is a company focused on creating unique characters that act as your personal companion to assist with promoting and enabling healthier life habits. "
+        ],
     },
     {
         id: 2,
         "title": "WHAT IS THE GOAL OF SLEEP?",
-        "description": "SLEEP has many goals, starting with creating IP that can be used to drive story-telling and move jobs. We believe in the ownership of characters and the usage of decentralised techniques that we do in this area throughout the year are all PTA, authentication of luxury fashioners, and ownership of health data is used. Our first demonstration of these are creation of 30 characters, luxury shoppers & foodfits, and a new branding app that supports healthy habits."
+        "description": [
+          "SLEEPY has many goals, starting with creating IP that can be used to drive story-telling and innovation.",
+          "We believe in the ownership of characters and the usage of decentralized technology. With these in mind we can change the way usage of NFTs, authentication of luxury fashionwear, and ownership of health data is used.",
+          "Our first demonstrations of these are creation of 3D characters, luxury sleepwear & bedding, and a sleep tracking app that rewards healthy habits."
+        ],
     },
     {
         id: 3,
         "title": "WHAT NETWORK IS THIS LAUNCHED ONE",
-        "description": "SLEEP's technology can be 11 DNA – LUNGO"
+        "description": [
+          "SLEEPY is launching on the L1 EVM -- LUKSO"
+        ],
     },
     {
         id: 4,
         "title": "HOW MUCH IS MINT?",
-        "description": "Bearing from the phone: Access hint: 4,000 likes 2 million per profile) Publish hint: -0,576 likes 20 million per profile)"
+        "description": [
+          "Minting will be in 3 phases:",
+          "Access Mint - 6 LYX (Max 2 mints per profile)",
+          "Presale Mint - 8 LYX (Max 2 mints per profile)",
+          "Public Mint - 10 LYX (Max 20 mints per profile)"
+        ],
     },
     {
         id: 5,
         "title": "WHAT IS THE SIZE OF THE COLLECTION?",
-        "description": "Collection size is 2 total of 10,000 PTA featuring unique SLEEP's characters."
+        "description": [
+          "Collection size is a total of 10,000 NFTs featuring unique SLEEPY characters."
+        ],
     },
     {
         id: 6,
         "title": "WHAT SHARP CONTRAST STANDARD IS USED",
-        "description": "We have created a new custom mint contract on the LUNGO blockchain using the LDR Standard. Our custom mint contract is known as LDR-TIP, which stands for Token Based Practice. This custom mint contract allows each minted character to have their own business Profile attached to them. This client is on the character's base field over greenRAP to utilize on-the-blasting 8-materials, attachable 8-tradicals inventory, and programming usage at LDR-Axy Manager."
+        "description": [
+          "We have created a new custom smart contract on the LUKSO blockchain using the LSP8 Standard.",
+          "Our custom smart contract is known as LSP8-TBP, which stands for Token Bound Profiles.",
+          "This custom smart contract allows each minted character to have their own Universal Profile attached to them. ",
+          "This allows for each character to have their own growable IP using on-chain identity & reputation, stackable & tradeable inventory, and programmable usage via LSP6 Key Manager."
+        ],
     },
     {
         id: 7,
         "title": "DO YOU NEED A UNIVERSAL PROFILE TO MINT?",
-        "description": "We, you will need to learn a tailored profile on LUNGO in order to miss a SLEEPY NFT. Since such character has their own Universal Profile tied to them it is a requirement for nothing not really character inventory."
+        "description": [
+          "Yes, you will need to have a Universal Profile on LUKSO in order to mint a SLEEPY NFT.   ",
+          "Since each character has their own Universal Profile tied to them it is a requirement for minting and using character inventory."
+        ],
     },
     {
         id: 8,
         "title": "WHAT IS A UNIVERSAL PROFILE?",
-        "description": "A Universal Profile is a small architectural account system, which sets as a source of digital identity. This makes any viewers better overalls across platforms & apps, teams & finishes, and programmables. Universal Profiles are compatible on both desktop and mobile. If you do not know one yet, feel free to create one here https://universalmorything.io/"
+        "description": [
+          "A Universal Profile is a smart contract based account system, which acts as a standardized digital identity. This makes your account interoperable across platforms & apps, secure & flexible, and programmable.",
+          "Universal Profiles are compatible on both desktop and mobile.",
+          "If you do not have one yet, feel free to create one here: https://universaleverything.io/"
+        ],
     }
 ]
 
@@ -72,7 +99,9 @@ export default function Accordion() {
                             alt="Accordion Arrow"
                         />
                     </h4>
-                    <p>{el.description}</p>
+                    <p>{el.description.map((text, index) => (
+                      <span key={index}>{text}</span>
+                    ))}</p>
                 </div>
             ))}
         </div>
