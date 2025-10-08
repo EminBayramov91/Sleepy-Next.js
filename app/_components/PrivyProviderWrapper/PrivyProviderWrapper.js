@@ -1,9 +1,12 @@
 "use client";
 import { PrivyProvider } from "@privy-io/react-auth";
+import { ApolloProvider } from "@apollo/client/react";
+import client from "@/app/_lib/apolloClient";
 
 export default function Providers({ children }) {
     return (
-        <PrivyProvider
+      <ApolloProvider client={client}>
+          <PrivyProvider
             appId={process.env.NEXT_PUBLIC_PRIVY_APP_ID}
             config={{
                 appearance: {
@@ -22,8 +25,9 @@ export default function Providers({ children }) {
                     nativeCurrency: { name: 'LUKSO', symbol: 'LYX', decimals: 18 },
                 },
             }}
-        >
-            {children}
-        </PrivyProvider>
+          >
+              {children}
+          </PrivyProvider>
+      </ApolloProvider>
     );
 }
