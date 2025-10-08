@@ -8,15 +8,25 @@ export default function Connect() {
   const { authenticated, user, login, logout } = usePrivy();
 
   if (authenticated) {
+    console.log("🔍 Full user object:", user);
+
+    console.log("🧩 Linked accounts:", user?.linkedAccounts);
+
     const upProfile = user?.linkedAccounts?.find(
       (acc) => acc.type === "wallet" && acc.chain === "lukso"
     );
+
+    console.log("💎 UP Profile:", upProfile);
 
     let avatarUrl = connectedImg;
     const ipfsUrl =
       upProfile?.profile?.profileImage?.url ||
       upProfile?.profile?.picture ||
-      upProfile?.metadata?.profileImage?.url;
+      upProfile?.metadata?.profileImage?.url ||
+      upProfile?.metadata?.picture ||
+      upProfile?.profile?.image;
+
+    console.log("🖼️ Raw IPFS or URL:", ipfsUrl);
 
     if (ipfsUrl && ipfsUrl.startsWith("ipfs://")) {
       avatarUrl = ipfsUrl.replace("ipfs://", "https://ipfs.io/ipfs/");
@@ -24,8 +34,7 @@ export default function Connect() {
       avatarUrl = ipfsUrl;
     }
 
-    console.log("UP Profile:", upProfile);
-    console.log("Avatar URL:", avatarUrl);
+    console.log("✅ Final Avatar URL:", avatarUrl);
 
     return (
       <div className={styles.connect}>
