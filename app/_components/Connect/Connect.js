@@ -8,11 +8,15 @@ export default function Connect() {
   const { authenticated, user, login, logout } = usePrivy();
 
   if (authenticated) {
+    const upProfile =
+      user?.linkedAccounts?.find(acc => acc.type === "wallet" && acc.chain === "lukso");
+    const avatarUrl = upProfile?.profile?.picture || connectedImg;
+
     return (
       <div className={styles.connect}>
         <div className={styles.connect}>
           <Image
-            src={connectedImg}
+            src={avatarUrl}
             alt="Connceted img"
             width="81"
             height="72"
