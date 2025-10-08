@@ -15,6 +15,7 @@ export default function Providers({ children }) {
                         createOnLogin: "users-without-wallets",
                     },
                 },
+              walletConnect: false,
                 defaultChain: {
                     id: 42,
                     name: 'LUKSO',
