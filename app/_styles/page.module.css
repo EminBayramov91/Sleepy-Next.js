@@ -15,7 +15,18 @@
     height: auto;
 }
 
+
+.container {
+    width: 100%;
+    max-width: 1480px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
 @media (max-width: 1440px) {
+    .page {
+        padding-top: 105px;
+    }
     .pageImg {
         width: 1000px;
     }
@@ -34,14 +45,18 @@
 }
 
 @media (max-width: 768px) {
-    .page {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        min-height: 100vh;
+    .container {
+        padding: 0;
     }
 
     .pageImg {
         width: inherit;
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width: 500px) {
+    .pageImg {
+        margin-bottom: 70px;
     }
 }

@@ -23,7 +23,7 @@ const accordion = [
     },
     {
         id: 3,
-        "title": "WHAT NETWORK IS THIS LAUNCHED ONE",
+        "title": "WHAT NETWORK IS THIS LAUNCHED ON?",
         "description": [
           "SLEEPY is launching on the L1 EVM -- LUKSO"
         ],
@@ -47,7 +47,7 @@ const accordion = [
     },
     {
         id: 6,
-        "title": "WHAT SHARP CONTRAST STANDARD IS USED",
+        "title": "WHAT SMART CONTRAST STANDARD IS USED?",
         "description": [
           "We have created a new custom smart contract on the LUKSO blockchain using the LSP8 Standard.",
           "Our custom smart contract is known as LSP8-TBP, which stands for Token Bound Profiles.",
