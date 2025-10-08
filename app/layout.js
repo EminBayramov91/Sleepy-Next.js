@@ -6,12 +6,10 @@ import MusicPlayer from "@/app/_components/MusicPlayer/MusicPlayer";
 import Providers from "@/app/_components/PrivyProviderWrapper/PrivyProviderWrapper";
 import HeaderWrapper from "@/app/_components/Header/HeaderWrapper";
 
-
 const geologica = Geologica({
   display: "swap",
   subsets: ["latin"],
 });
-
 
 export const metadata = {
   title: {
@@ -21,7 +19,6 @@ export const metadata = {
   description:
     "SLEEPY merges luxury silk sleepwear, premium bedding, and anime-inspired AI companions to create a new dimension of modern rest. Designed for dreamers who seek comfort, creativity, and meaningful digital connection — both offline and online. Sleep smarter, dream deeper.",
 };
-
 
 export default function RootLayout({ children }) {
   return (
