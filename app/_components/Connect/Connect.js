@@ -1,23 +1,24 @@
 "use client";
 import styles from "./connect.module.css";
 import { usePrivy } from "@privy-io/react-auth";
+import connectedImg from "@/public/SLEEPYSIGN.webp";
+import Image from "next/image";
 
 export default function Connect() {
-  const { ready, authenticated, user, login, logout } = usePrivy();
-
-  if (!ready) {
-    return <div>Loading...</div>;
-  }
+  const { authenticated, user, login, logout } = usePrivy();
 
   if (authenticated) {
-    const displayName =
-      user?.wallet?.address?.slice(0, 6) + "..." + user?.wallet?.address?.slice(-4);
-
     return (
       <div className={styles.connect}>
-        <button onClick={logout}>
-          {displayName || "Connected"}
-        </button>
+        <div className={styles.connect}>
+          <Image
+            src={connectedImg}
+            alt="Connceted img"
+            width="81"
+            height="72"
+            onClick={logout}
+          />
+        </div>
       </div>
     );
   }

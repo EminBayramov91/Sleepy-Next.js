@@ -8,7 +8,8 @@ import instagram from "@/public/Instragram.webp";
 import {usePrivy} from "@privy-io/react-auth";
 
 export default function NavigationMobile({ toggleMenu, setToggleMenu }) {
-    const {login} = usePrivy();
+    const { authenticated, user, login, logout } = usePrivy();
+
     const handleLinkClick = () => setToggleMenu(false);
 
 
@@ -16,7 +17,7 @@ export default function NavigationMobile({ toggleMenu, setToggleMenu }) {
         <nav className={`${styles.headerNav} ${toggleMenu ? styles.activeNav : ""}`}>
             <ul>
                 <li>
-                    <button onClick={login}>CONNECT</button>
+                    <button onClick={authenticated ? logout : login}>{authenticated ? "CONNECTED" : "CONNECT"}</button>
                 </li>
                 <li>
                     <Link href="/marketplace" onClick={handleLinkClick}>MARKETPLACE</Link>

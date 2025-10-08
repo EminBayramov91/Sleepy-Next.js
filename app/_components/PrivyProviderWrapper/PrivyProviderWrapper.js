@@ -1,5 +1,4 @@
 "use client";
-
 import { PrivyProvider } from "@privy-io/react-auth";
 
 export default function Providers({ children }) {
@@ -15,13 +14,13 @@ export default function Providers({ children }) {
                         createOnLogin: "users-without-wallets",
                     },
                 },
-              walletConnect: false,
-              defaultChain: {
-                id: 1,
-                name: "Ethereum Mainnet",
-                rpcUrl: "https://rpc.ankr.com/eth",
-                nativeCurrency: { name: "Ether", symbol: "ETH", decimals: 18 },
-              },
+                walletConnect: false,
+                defaultChain: {
+                    id: 42,
+                    name: 'LUKSO',
+                    rpcUrl: 'https://rpc.mainnet.lukso.network',
+                    nativeCurrency: { name: 'LUKSO', symbol: 'LYX', decimals: 18 },
+                },
             }}
         >
             {children}
