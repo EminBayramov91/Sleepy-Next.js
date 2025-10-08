@@ -39,6 +39,8 @@ export default function Connect() {
     skip: !address,
   });
 
+  const profileAddress = user?.wallet?.address || user?.linkedAccounts?.[0]?.address;
+
   console.log("Privy user:", user);
   console.log("LUKSO address:", profileAddress);
   console.log("GraphQL data:", data);
