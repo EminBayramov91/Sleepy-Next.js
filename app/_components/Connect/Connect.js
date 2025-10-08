@@ -12,9 +12,7 @@ export default function Connect() {
 
     console.log("🧩 Linked accounts:", user?.linkedAccounts);
 
-    const upProfile = user?.linkedAccounts?.find(
-      (acc) => acc.type === "wallet" && acc.chain === "lukso"
-    );
+    const upProfile = user?.wallet;
 
     console.log("💎 UP Profile:", upProfile);
 
