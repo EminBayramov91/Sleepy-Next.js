@@ -47,7 +47,7 @@ const accordion = [
     },
     {
         id: 6,
-        "title": "WHAT SMART CONTRAST STANDARD IS USED?",
+        "title": "WHAT SMART CONTRACT STANDARD IS USED?",
         "description": [
           "We have created a new custom smart contract on the LUKSO blockchain using the LSP8 Standard.",
           "Our custom smart contract is known as LSP8-TBP, which stands for Token Bound Profiles.",
