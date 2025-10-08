@@ -39,11 +39,16 @@ export default function Connect() {
     skip: !address,
   });
 
+  console.log("Privy user:", user);
+  console.log("LUKSO address:", profileAddress);
+  console.log("GraphQL data:", data);
+  console.log("GraphQL error:", error);
+
   const profileImage =
     data?.Profile?.[0]?.profileImages?.[0]?.url?.replace(
       "ipfs://",
       "https://ipfs.io/ipfs/"
-    ) || connectedImg;
+    )
 
   if (error) console.error("GraphQL Error:", error);
 
