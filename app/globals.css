@@ -6,7 +6,7 @@
     --footer-accent: #8C34D9;
     --accordion-bg: rgba(217, 217, 217, 0.1);
     --accordion-tab: rgba(217, 217, 217, 0.4);
-    --music-player: #555555;
+    --music-player: rgba(85, 85, 85, 0.6);
     --input-color: rgba(238, 224, 255, 0.8);
     --team-members-bg: #3E3E3E;
     --popup-bg: rgba(255, 255, 255, 0.8);
@@ -29,6 +29,11 @@ body {
     background-color: var(--main-color);
     font-weight: 400;
 }
+
+.no-scroll {
+    overflow: hidden;
+}
+
 
 main {
     min-height: 100vh;
@@ -60,7 +65,6 @@ input {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 150px;
 
     img {
         margin: 0 auto;
@@ -84,9 +88,6 @@ input {
         img {
             width: 650px;
         }
-    }
-    main {
-        /*margin-top: 100px;*/
     }
 }
 

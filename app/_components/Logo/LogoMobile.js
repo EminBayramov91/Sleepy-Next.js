@@ -8,7 +8,7 @@ export default function LogoMobile({ toggleMenu, setToggleMenu}) {
 
 
   return (
-        <div className={`${styles.headerIntro} ${toggleMenu ? "" : styles.headerIntroBg}`}>
+        <div className={styles.headerIntro}>
             <Link href="/" onClick={handleLinkClick}>
                 <Image
                     src={logo}

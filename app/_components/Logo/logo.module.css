@@ -1,17 +1,11 @@
 .headerIntro {
-    position: fixed;
-    top: 0;
-    left: 0;
+    position: relative;
     z-index: 100;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 12px;
-}
-
-.headerIntroBg {
-    background-color: var(--header-bg);
 }
 
 .burger,

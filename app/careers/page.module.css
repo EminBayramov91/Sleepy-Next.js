@@ -1,5 +1,4 @@
 .page {
-    padding-top: 150px;
     ul {
         display: grid;
         grid-template-columns: auto auto;
@@ -17,7 +16,6 @@
 
 @media (max-width: 1024px) {
     .page {
-        padding-top: 105px;
         ul {
             grid-template-columns: auto;
         }

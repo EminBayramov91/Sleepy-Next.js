@@ -1,6 +1,3 @@
-.page {
-    padding-top: 150px;
-}
 
 .pageImg {
     display: block;
@@ -15,9 +12,6 @@
 }
 
 @media (max-width: 1024px) {
-    .page {
-        padding-top: 105px;
-    }
 
     .pageImg {
         width: 500px;
