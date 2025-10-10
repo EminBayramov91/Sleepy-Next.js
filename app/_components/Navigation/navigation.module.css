@@ -51,6 +51,7 @@
             padding: 28px 30px 28px 5px;
             border-bottom: 1px solid var(--burger-border);
             a, button {
+                display: block;
                 color: var(--black-text);
                 font-weight: 700;
                 font-size: 32px;

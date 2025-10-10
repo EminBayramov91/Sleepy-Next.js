@@ -7,11 +7,7 @@ import connectedImg from "@/public/SLEEPYSIGN.webp";
 export default function Connect() {
   const { authenticated, user, login, logout, ready } = usePrivy();
 
-  if (!ready) return null;
-
   if (authenticated) {
-    const userName = user?.name || user?.wallet?.address?.slice(0, 6) || "User";
-
     return (
       <div className={styles.connect}>
         <button onClick={logout}>Connected</button>
