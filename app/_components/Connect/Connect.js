@@ -14,9 +14,7 @@ export default function Connect() {
 
     return (
       <div className={styles.connect}>
-        <button onClick={logout}>
-          {userName}
-        </button>
+        <button onClick={logout}>Connected</button>
       </div>
     );
   }
