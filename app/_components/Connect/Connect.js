@@ -11,6 +11,8 @@ export default function Connect() {
 
   if (authenticated) {
     const userName = user?.name || user?.wallet?.address?.slice(0, 6) || "User";
+    console.log(user.name);
+    console.log(user.wallet.address);
 
     return (
       <div className={styles.connect}>
