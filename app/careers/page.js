@@ -9,10 +9,10 @@ import Image from "next/image";
 import comingSoonImg from "@/public/comingSoon.webp";
 
 export default function Page() {
-    const [hide, setHide] = useState(true);
+    const [commingSoon, setCommingSoon] = useState(true);
     const jobsRef = useRef(null);
 
-    if (hide) {
+    if (commingSoon) {
         return (
           <div className="comingSoon">
               <Container>

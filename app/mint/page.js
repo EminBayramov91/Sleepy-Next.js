@@ -1,4 +1,4 @@
-
+import styles from "./page.module.css"
 import Container from "@/app/_components/Container/Container";
 import MintIntro from "@/app/_components/MintIntro/MintIntro";
 import MintMap from "@/app/_components/MintMap/MintMap";
@@ -11,7 +11,7 @@ export const metadata = {
 
 export default function Page () {
     return (
-        <div>
+        <div className={styles.page}>
             <Container>
                 <MintIntro />
                 <MintMap />

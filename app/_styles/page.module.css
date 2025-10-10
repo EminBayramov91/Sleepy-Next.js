@@ -5,6 +5,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 150px;
 }
 
 .pageImg {
@@ -23,6 +24,9 @@
 }
 
 @media (max-width: 1440px) {
+    .page {
+        padding-top: 105px;
+    }
     .pageImg {
         width: 1000px;
     }
