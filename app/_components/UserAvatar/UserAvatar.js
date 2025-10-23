@@ -15,8 +15,8 @@ export default function UserAvatar() {
         <Image
           src={profile.profileImage}
           alt={profile.name}
-          width={100}
-          height={100}
+          width="100"
+          height="100"
           style={{ borderRadius: "50%", objectFit: "cover" }}
         />
       ) : (
