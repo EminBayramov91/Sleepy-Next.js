@@ -4,6 +4,7 @@ import FooterWrapper from "@/app/_components/Footer/FooterWrapper";
 import Preloader from "@/app/_components/Preloader/Preloader";
 import MusicPlayer from "@/app/_components/MusicPlayer/MusicPlayer";
 import Providers from "@/app/_components/PrivyProviderWrapper/PrivyProviderWrapper";
+import LuksoProfileProviderWrapper from "@/app/_contexts/LuksoProfileProviderWrapper";
 import HeaderWrapper from "@/app/_components/Header/HeaderWrapper";
 
 const geologica = Geologica({
@@ -25,12 +26,14 @@ export default function RootLayout({ children }) {
     <html lang="en">
     <body className={geologica.className}>
     <Providers>
-      <Preloader>
-        <HeaderWrapper />
-        <MusicPlayer />
-        <main>{children}</main>
-        <FooterWrapper />
-      </Preloader>
+      <LuksoProfileProviderWrapper>
+        <Preloader>
+          <HeaderWrapper />
+          <MusicPlayer />
+          <main>{children}</main>
+          <FooterWrapper />
+        </Preloader>
+      </LuksoProfileProviderWrapper>
     </Providers>
     </body>
     </html>
